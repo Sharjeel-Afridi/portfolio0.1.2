@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Pixelify+Sans:wght@500&display=swap');
+@font-face {
+    font-family: 'Africa Cliff';
+    src: url('./fonts/Africa\ Trial\ Cliff/');
+}
+@font-face {
+    font-family: 'Gobold High';
+    src: url('./fonts/gobold/');
+}
+@font-face {
+    font-family: 'monument';
+    src: url('./fonts/MonumentExtended-FreeForPersonalUse/');
+}
+@font-face {
+    font-family: 'Bemirs';
+    src: url('./fonts/bemirs-font/BemirsDemoVersionRegular-X361d.otf');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Abel', serif;
+    box-sizing: border-box;
+}
+img{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+/* nav {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 25px;
+    margin: 10px;
+    width: clac(100vw - margin);
+    color: #fff;
+    background-color: rgb(0, 0, 0,0.2);
+    backdrop-filter: blur(2px);
+    border-radius: 30px;
+}
+.nav-left{
+    display: flex;
+    justify-content: space-between;
+    width: 33%;
+}
+nav h2{
+    font-size: 2rem;
+} */
+.name{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color:gold;
+    font-family: 'Bemirs';
+    font-size: 10vw;
+    font-weight: 500;
+}
