@@ -10,6 +10,8 @@ const xEl = document.getElementById('x')
 const linkedinEl = document.getElementById('linkedin')
 const discordEl = document.getElementById('discord')
 
+const github = document.getElementById('github');
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
@@ -64,5 +66,9 @@ linkedinEl.addEventListener('click', () => {
 });
 discordEl.addEventListener('click', () => {
     const link = 'discordapp.com/users/sharjeelafridi_'
+    openLink(link)
+});
+github.addEventListener('click', () => {
+    const link = 'https://github.com/Sharjeel-Afridi'
     openLink(link)
 });
