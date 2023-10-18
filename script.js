@@ -10,6 +10,19 @@ const xEl = document.getElementById('x')
 const linkedinEl = document.getElementById('linkedin')
 const discordEl = document.getElementById('discord')
 
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting){
+            entry.target.classList.add('show')
+        }
+    })
+})
+
+const hiddenElements = document.querySelectorAll('.hidden')
+hiddenElements.forEach((el) => observer.observe(el));
+
+
 function openLink(urlParam){
     window.open(urlParam, '_blank');
 }
