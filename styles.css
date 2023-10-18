@@ -95,6 +95,12 @@ body{
 .skills{
     height: 50vh;
     width: 100vw;
-    margin-right: 30px;
-    
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.skills img{
+    height: 9rem;
 }
