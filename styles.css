@@ -86,7 +86,7 @@ nav button:hover{
     height: 100vh;
 }
 
-.about h1{
+.about h1, .projects h1, .socials h1{
     height: 10vh;
     width: 100%;
     display: flex;
@@ -128,6 +128,31 @@ nav button:hover{
 }
 .skills img{
     height: 9rem;
+}
+
+.projects{
+    height: 100vh;
+    width: 100vw;
+}
+.socials{
+    height: 100vh;
+    width: 100vw;
+}
+.socials .logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    margin-top: 10vh;
+}
+
+.socials .logos img{
+    height: 10vw;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.socials .logos img:hover{
+    height: 12vw;
 }
 
 @media screen and (max-width:1000px){
