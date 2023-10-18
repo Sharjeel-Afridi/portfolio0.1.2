@@ -6,7 +6,7 @@
 }
 @font-face {
     font-family: 'Gobold High';
-    src: url('./fonts/gobold/');
+    src: url('./fonts/gobold/Gobold\ Bold.otf');
 }
 @font-face {
     font-family: 'monument';
@@ -17,26 +17,22 @@
     src: url('./fonts/bemirs-font/BemirsDemoVersionRegular-X361d.otf');
 }
 
+
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Abel', serif;
+    font-family: 'Montserrat', serif;
+    color: white;
     box-sizing: border-box;
-    transition: 0.3s;
+    background-color: #1b2845;
+    background-image: linear-gradient(315deg, #1b2845 0%, #274060 74%);
+    background-attachment: fixed;
 }
-img{
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    object-fit: cover;
-    position: fixed;
-    z-index: -1;
-    transition: opacity 0.5s ease-in-out;
-}
+
 .first-page{
     height: 100vh;
     width: 100vw;
+   
 }
 .name{
     position: absolute;
@@ -44,34 +40,61 @@ img{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .name h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    color:white;
+    margin: 0; 
+    background: linear-gradient(315deg, #fffcf9 0%, #ffd166 74%);
+    -webkit-background-clip: text;
+    color: transparent;
     font-family: 'Bemirs';
     font-size: 10vw;
     font-weight: 500;
-    text-shadow: 2px 2px 0px black;
+    /* text-shadow: 2px 2px 0px white; */
 }
 .about{
+    display: flex;
+    flex-direction: column ;
     width: 100vw;
     height: 100vh;
 }
-.h1{
-    height: 100px;
+
+.about h1{
+    height: 10vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.h1 h1{
+    background: linear-gradient(315deg, #fffcf9 0%, #ffd166 74%);
+    -webkit-background-clip: text;
+    color: transparent;
     margin: 0; 
-    color:gold;
-    font-family: 'monument';
-    font-size: 6vh;
+    font-family: 'Bemirs';
+    font-size: 7vh;
     font-weight: 500;
-    text-shadow: 2px 2px 0px black; 
-
+}
+.about h2 {
+    font-family: 'Montserrat';
+    text-align: center;
+}
+.about span{
+    font-weight: bold;
+    font-style: italic;
+    background: linear-gradient(315deg, #fffcf9 0%, #ffd166 74%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.description{
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.skills{
+    height: 50vh;
+    width: 100vw;
+    margin-right: 30px;
+    
 }
