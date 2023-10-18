@@ -1,17 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Pixelify+Sans:wght@500&display=swap');
-@font-face {
-    font-family: 'Africa Cliff';
-    src: url('./fonts/Africa\ Trial\ Cliff/');
-}
-@font-face {
-    font-family: 'Gobold High';
-    src: url('./fonts/gobold/Gobold\ Bold.otf');
-}
-@font-face {
-    font-family: 'monument';
-    src: url('./fonts/MonumentExtended-FreeForPersonalUse/');
-}
 @font-face {
     font-family: 'Bemirs';
     src: url('./fonts/bemirs-font/BemirsDemoVersionRegular-X361d.otf');
@@ -33,6 +20,26 @@ body{
     height: 100vh;
     width: 100vw;
    
+}
+nav{
+    height: 20vh;
+    display: flex;
+
+}
+nav button{
+    margin: 2.5vw 1.5vw;
+    font-size: 1.5vw;
+    padding:0 1.5vw ;
+    font-family: 'Montserrat';
+    background:transparent;
+    color: #ffd166;
+    border: 2px solid #ffd166;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    transition: 0.3s ;
+}
+nav button:hover{
+    box-shadow:1px 1px 10px #ffd166;
 }
 .name{
     position: absolute;
@@ -99,7 +106,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 7vw;
 }
 .skills img{
     height: 9rem;
