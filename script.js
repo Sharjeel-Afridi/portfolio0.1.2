@@ -12,6 +12,11 @@ const discordEl = document.getElementById('discord')
 
 const github = document.getElementById('github');
 
+const hamburger = document.querySelector('.hamburger');
+const navRight  = document.querySelector('.nav-right');
+const navBtn = document.querySelector('nav button');
+
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
@@ -72,3 +77,10 @@ github.addEventListener('click', () => {
     const link = 'https://github.com/Sharjeel-Afridi'
     openLink(link)
 });
+
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navRight.classList.toggle('active');
+    navBtn.classList.toggle('active');
+})
