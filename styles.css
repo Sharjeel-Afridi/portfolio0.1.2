@@ -3,7 +3,9 @@
     font-family: 'Bemirs';
     src: url('./fonts/bemirs-font/BemirsDemoVersionRegular-X361d.otf');
 }
-
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     margin: 0;
