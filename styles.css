@@ -19,7 +19,7 @@ body{
 .first-page{
     height: 100vh;
     width: 100vw;
-   
+
 }
 nav{
     height: 20vh;
@@ -94,11 +94,50 @@ nav button:hover{
     font-size: 10vw;
     font-weight: 500;
 }
+#arrowAnim {
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 90vh;
+}
+  
+.arrow {
+    width: 1vw;
+    height: 1vw;
+    border: 0.5vw solid;
+    border-color: #ffd169 transparent transparent #ffd169;
+    transform: rotate(45deg);
+}
+  
+
+.arrowSliding {
+    position: absolute;
+    -webkit-animation: slide 1s linear infinite; 
+    animation: slide 1s linear infinite;
+}
+
+
+.delay {
+    -webkit-animation-delay: 1.5s; 
+    animation-delay: 1.5s;
+}
+
+
+@keyframes slide {
+    0% { opacity:0; transform: translateY(4vh); }	
+    20% { opacity:1; transform: translateY(2vh); }	
+    80% { opacity:1; transform: translateY(-2vh); }	
+    100% { opacity:0; transform: translateY(-4vh); }	
+}
 .about{
     display: flex;
     flex-direction: column ;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh + 10px);
+
 }
 
 .about h1, .projects h1, .socials h1{
@@ -145,10 +184,14 @@ nav button:hover{
 .skills img{
     height: 9rem;
 }
-
+.skills .github{
+    background-color: white;
+    border-radius: 50%;
+}
 .projects{
     height: 100vh;
     width: 100vw;
+
 }
 .socials{
     height: 100vh;
@@ -170,7 +213,6 @@ nav button:hover{
     transition: 0.3s;
 }
 .socials .logos .x{
-    /* background-color: white; */
     border-radius: 20px;
 }
 .logo:nth-child(2){
@@ -256,6 +298,9 @@ footer{
     }
     .name h1{
         font-size: 20vw;
+    }
+    #arrowAnim{
+        display: none;
     }
     .about h1{
         margin-top: 10px;
