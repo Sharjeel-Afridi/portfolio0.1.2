@@ -191,11 +191,43 @@ nav button:hover{
 .projects{
     height: 100vh;
     width: 100vw;
-
+    margin-top: 10vh;
+}
+.projects-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 20px;
+}
+.project-1, .project-2, .project-3, .project-4{
+    height: 60vh;
+    width: 30vw;
+    border-radius: 20px;
+    background-color: #fffcf9;
+}
+.project-1{
+    background: url(./images/project1.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.project-2{
+    background: url(./images/blackjack.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.project-3{
+    background: url(./images/post.png);
+    background-size: cover;
+}
+.project-4{
+    background: url(./images/leads.png);
+    
 }
 .socials{
     height: 100vh;
     width: 100vw;
+    margin-top: 60vh;
 }
 .socials .logos{
     display: flex;
@@ -203,12 +235,12 @@ nav button:hover{
     align-items: center;
     gap: 10vw;
     flex-wrap: wrap;
-    margin-top: 10vh;
+    margin: 10vh 50vh 0 50vh;
     overflow: hidden;
 }
 
 .socials .logos img{
-    height: 10vw;
+    height: 12vw;
     cursor: pointer;
     transition: 0.3s;
 }
