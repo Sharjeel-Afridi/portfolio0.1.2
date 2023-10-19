@@ -331,12 +331,16 @@ footer{
     .name h1{
         font-size: 20vw;
     }
-    #arrowAnim{
-        display: none;
+    .arrow{
+        height: 10vw;
+        width: 10vw;
+        border: 0.5vw solid;
+        border-color: #ffd169 transparent transparent #ffd169;
     }
     .about h1{
         margin-top: 10px;
         font-size: 20vw;
+        height: auto;
     }
     .about h2{
         font-size: 5vw;
@@ -347,6 +351,20 @@ footer{
     }
     .skills img{
         height: 20vw;
+    }
+    .projects-container{
+        margin-top: 10vh;
+    }
+    .project-1,.project-2,.project-3,.project-4{
+        height: 30vh;
+        width: 40vw;
+        
+    }
+    .socials{
+        margin-top: 0;
+    }
+    .socials .logos{
+        margin: 0;
     }
     .socials .logos img{
         height: 40vw;
