@@ -235,6 +235,7 @@ nav button:hover{
     background-size:cover;
     background-position: center;
 }
+
 .socials{
     height: 100vh;
     width: 100vw;
@@ -331,10 +332,10 @@ footer{
     }
     .nav-right.active{
         top: calc(20vh);
-        left: 80px;
+        left: 70px;
     }
-    .nav-right h3{
-        font-size: 5vw;
+    .nav-right a{
+        font-size: 4vw;
         margin: 16px 0;
         font-weight: 400;
         opacity: 1;
@@ -366,13 +367,13 @@ footer{
     .projects-container{
         margin-top: 10vh;
     }
-    .project-1,.project-2,.project-3,.project-4{
+    .project-1,.project-2,.project-3,.project-4, .project-5{
         height: 30vh;
         width: 40vw;
         
     }
     .socials{
-        margin-top: 0;
+        margin-top: 50vh;
     }
     .socials .logos{
         margin: 0;
