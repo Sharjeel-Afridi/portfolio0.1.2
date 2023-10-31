@@ -275,7 +275,7 @@ nav button:hover{
     opacity: 0;
     filter: blur(10px);
     transform: translateX(-100%);
-    transition: all 1s;
+    transition: all 0.8s;
 }
 .show{
     opacity: 1;
